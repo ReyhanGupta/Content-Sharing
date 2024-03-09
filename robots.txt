@@ -1,0 +1,12 @@
+# Crawlers Setup: The asterisk means that the robots.txt file applies to all web robots that visit the site.
+User-agent: *
+
+Disallow: /admin_messages.php/
+
+Noindex: /admin_messages.php/
+#Theoretically, you could disallow a page, but it could still end up in the index.Generally, you don’t want that.
+#That’s why you need the noindex directive. It works with the disallow directive to make sure bots don’t visit or index certain pages.
+
+#In short, it tells web robots to not crawl the links on a page.
+
+
